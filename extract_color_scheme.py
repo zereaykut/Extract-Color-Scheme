@@ -37,17 +37,12 @@ class ColorSchemeExtractor:
         
         return [rgb_to_hex(color)[:7] for color in self.colour_palette]
 
-    def control_loc(self):
-        if not os.path.exists(self.save_loc):
-            os.makedirs(self.save_loc)
-
     def save_as_json(self):
         dictionary = {f"color{index}": color for index, color in enumerate(self.colour_palette_hex)}
         with open(f"{self.output_name}.json", "w") as f:
             f.write(json.dumps(dictionary, indent=4))
 
     def execute(self):
-        self.control_loc()
         self.save_as_json()
 
 if __name__ == "__main__":
