@@ -28,9 +28,9 @@ Install required packages
 pip install -r requirements.txt
 ```
 
-Run application
--c : number of color outputs
--i : image path
+Run application <br>
+-c : number of color outputs <br>
+-i : image path <br>
 -n : name of json output file
 ```shell
 python exctract_color_scheme.py -c 6 -i sample.jpg -n sample
