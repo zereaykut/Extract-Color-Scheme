@@ -11,14 +11,9 @@ class ColorSchemeExtractor:
         self.n_colors = colors
         self.image_path = image_path
         self.output_name = output_name
-        self.user = self.get_user()
         self.image = self.load_image()
         self.colour_palette = self.extract_colors()
-        self.save_loc = f"/home/{self.user}/.cache/color_schemes"
         self.colour_palette_hex = self.convert_palette_to_hex()
-        
-    def get_user(self):
-        return sp.run("whoami", shell=True, capture_output=True, text=True).stdout.strip()
 
     def load_image(self):
         image = mpimg.imread(self.image_path)
