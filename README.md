@@ -1,4 +1,4 @@
-# Extract-Color-Scheme
+# Extract Color Scheme
 Exctract color scheme from given PNG or JPG file using Kmeans algorithm
 
 ## Run Application
