@@ -1,11 +1,11 @@
-# extract_color_scheme
+# Extract-Color-Scheme
 Exctract color scheme from given PNG or JPG file using Kmeans algorithm
 
 ## Run Application
 Clone the repo
 ```shell
-git clone https://github.com/zereaykut/extract_color_scheme
-cd exctract_color_scheme
+git clone https://github.com/zereaykut/Extract-Color-Scheme
+cd Extract-Color-Scheme
 ```
 
 Create python environment
